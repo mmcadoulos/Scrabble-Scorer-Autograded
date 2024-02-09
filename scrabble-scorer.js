@@ -112,7 +112,7 @@ function transform(obj) {
    for (const item in obj){
       for (let i = 0; i < obj[item].length; i++){
       //console.log(obj[item][i]);
-      objNew[`${obj[item][i].toLowerCase()}`] = Number(item);
+      objNew[obj[item][i].toLowerCase()] = Number(item);
       }
    } 
    return objNew;
